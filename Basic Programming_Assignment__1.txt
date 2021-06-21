@@ -1,0 +1,299 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Programming Assignment _1",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VmvE3670QSLS"
+      },
+      "source": [
+        "1. Write a Python program to print &quot;Hello Python&quot;?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8uQ5cFbKQYju",
+        "outputId": "d6c35a0a-5c0f-40c8-84b6-ade6487ee4bd"
+      },
+      "source": [
+        "a = input(\"Enter Input: \")\n",
+        "print(a)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Input: Hello Python\n",
+            "Hello Python\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PCYojA4uQwZw"
+      },
+      "source": [
+        "Q.2 Write a Python program to do arithmetical operations addition and division.?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xmronTfVQy9-",
+        "outputId": "8394cc00-b6c5-46c1-d7c2-06970b533b89"
+      },
+      "source": [
+        "a = int(input(\"Enter Num_1: \"))\n",
+        "b = int(input(\"Enter Num_2: \"))\n",
+        "ops = input(\"Enter Operation: \")\n",
+        "if ops == \"addition\":\n",
+        "    c = a+b\n",
+        "    print(\"addition is \",c)\n",
+        "elif ops == \"division\":\n",
+        "    d = a/b\n",
+        "    print(\"Division is \",d)\n",
+        "else:\n",
+        "    print(\"Enter correct operation\")"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Num_1: 7\n",
+            "Enter Num_2: 8\n",
+            "Enter Operation: addition\n",
+            "addition is  15\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kZmILKlCRB4-",
+        "outputId": "3b75ad7a-81e0-422d-de6a-e40f8fe12bf5"
+      },
+      "source": [
+        "a = int(input(\"Enter Num_1: \"))\n",
+        "b = int(input(\"Enter Num_2: \"))\n",
+        "ops = input(\"Enter Operation: \")\n",
+        "if ops == \"addition\":\n",
+        "    c = a+b\n",
+        "    print(\"addition is \",c)\n",
+        "elif ops == \"division\":\n",
+        "    d = a/b\n",
+        "    print(\"Division is \",d)\n",
+        "else:\n",
+        "    print(\"Enter correct operation\")"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Num_1: 4\n",
+            "Enter Num_2: 2\n",
+            "Enter Operation: division\n",
+            "Division is  2.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5MDs2XbMRZ5V",
+        "outputId": "86797f3b-5e6a-42f9-b930-7d75d08fd098"
+      },
+      "source": [
+        "a = int(input(\"Enter Num_1: \"))\n",
+        "b = int(input(\"Enter Num_2: \"))\n",
+        "ops = input(\"Enter Operation: \")\n",
+        "if ops == \"addition\":\n",
+        "    c = a+b\n",
+        "    print(\"addition is \",c)\n",
+        "elif ops == \"division\":\n",
+        "    d = a/b\n",
+        "    print(\"Division is \",d)\n",
+        "else:\n",
+        "    print(\"Enter correct operation\")"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Num_1: 5\n",
+            "Enter Num_2: 6\n",
+            "Enter Operation: sd\n",
+            "Enter correct operation\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NZPRk-GlR3TX"
+      },
+      "source": [
+        "\n",
+        "Q.3 Write a Python program to find the area of a triangle?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CCQiveSJR51O",
+        "outputId": "95fe720f-6a15-4e8d-ed2b-d21f8fd35e6d"
+      },
+      "source": [
+        "def area_of_triangle(base,height):\n",
+        "    area = (base*height)/2\n",
+        "    print(area)\n",
+        "    \n",
+        "a = area_of_triangle(5,6)"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "15.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IaEkIGygSA7O"
+      },
+      "source": [
+        "\n",
+        "Q.4 Write a Python program to swap two variables?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BZdmvW2DSC3V",
+        "outputId": "d4a911b8-8976-4474-d10c-4725d786c685"
+      },
+      "source": [
+        "x = input(\"Enter num_1: \")\n",
+        "print(x)\n",
+        "y = input(\"Enter num_2: \")\n",
+        "print(y)\n",
+        "\n",
+        "temp = x\n",
+        "x = y\n",
+        "y = temp\n",
+        "\n",
+        "print(\"{} and {} are new valuse of x and y respectively\".format(x,y))"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter num_1: 4\n",
+            "4\n",
+            "Enter num_2: 5\n",
+            "5\n",
+            "5 and 4 are new valuse of x and y respectively\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FSCh1_vXSMuu"
+      },
+      "source": [
+        "\n",
+        "Q.5 Write a Python program to generate a random number?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Aw4XZZUOSOZ1",
+        "outputId": "c55f8662-ff2c-4171-9eab-b22e78d8ee28"
+      },
+      "source": [
+        "import random\n",
+        "rndno = random.random()\n",
+        "print(rndno)"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0.8652480394531528\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jYWV4vptSQq8"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
